@@ -1,4 +1,4 @@
-/* ================= RESET + BASE ================= */
+
 /* I-reset lahat ng default spacing */
 *{ margin:0; padding:0; box-sizing:border-box; }
 
@@ -431,7 +431,21 @@ button:hover{
   color: var(--muted);
   font-family: Georgia, "Times New Roman", serif;
 }
-
+#btn
+{
+background-color: #07aa30;
+z-index: 0;
+height: 50px;
+width: 120px;
+color: #e7e9ef;
+border-radius: 50px;
+font-size: 17px;
+}
+#details
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px){
   /* Maayos na pag-wrap ng nav sa mobile */
