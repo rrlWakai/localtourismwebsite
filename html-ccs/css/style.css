@@ -1,7 +1,9 @@
 /* ================= RESET + BASE ================= */
+/* I-reset lahat ng default spacing */
 *{ margin:0; padding:0; box-sizing:border-box; }
 
 :root{
+  /* Mga main colors at design variables */
   --bg: #f5f7fb;
   --surface: #ffffff;
   --muted: #6b7280;
@@ -16,9 +18,9 @@
   --shadow-soft: 0 8px 18px rgba(0,0,0,0.08);
 
   --container: 1100px;
-  --section-pad: 72px;      /* consistent vertical spacing */
-  --gutter: 20px;           /* consistent side padding */
-  --card-pad: 18px;         /* consistent card padding */
+  --section-pad: 72px;      /* Pare-parehong vertical spacing */
+  --gutter: 20px;           /* Pare-parehong side padding */
+  --card-pad: 18px;         /* Pare-parehong padding ng cards */
 }
 
 html{ scroll-behavior:smooth; }
@@ -30,19 +32,19 @@ body{
   line-height: 1.6;
 }
 
-/* ================= CONSISTENT SECTION LAYOUT ================= */
+/* ================= PARE-PAREHONG SECTION LAYOUT ================= */
 .section{
   padding: var(--section-pad) var(--gutter);
 }
 
-/* Make ALL direct children align to same container width */
+/* Lahat ng direct children naka-align sa parehong container width */
 .section > *{
   max-width: var(--container);
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Section title consistent */
+/* Consistent na style ng section title */
 .section-title{
   text-align:center;
   font-weight: 700;
@@ -53,17 +55,18 @@ body{
   font-family: Georgia, "Times New Roman", serif;
 }
 
-/* Paragraph consistency */
+/* Consistent paragraph style */
 p{
   color: #374151;
 }
 
-/* Ensure anchors don’t hide under fixed nav */
+/* Para hindi matakpan ng fixed nav kapag nag-scroll */
 #home, #about, #attractions, #contact{
   scroll-margin-top: 92px;
 }
 
 /* ================= NAVIGATION ================= */
+/* Fixed navigation bar sa taas */
 .nav{
   position: fixed;
   top:0; left:0;
@@ -73,6 +76,7 @@ p{
   z-index: 999;
 }
 
+/* Inner container ng navigation */
 .nav-inner{
   max-width: var(--container);
   margin: 0 auto;
@@ -83,6 +87,7 @@ p{
   gap: 14px;
 }
 
+/* Logo sa navigation */
 .nav-logo{
   width: 44px;
   height: 44px;
@@ -90,6 +95,7 @@ p{
   border-radius: 10px;
 }
 
+/* Mga navigation links */
 .nav-links{
   list-style:none;
   display:flex;
@@ -100,6 +106,7 @@ p{
   justify-content:center;
 }
 
+/* Style ng link */
 .nav-links a{
   text-decoration:none;
   color: var(--brand-2);
@@ -111,6 +118,7 @@ p{
   transition: 0.2s ease;
 }
 
+/* Hover effect ng nav link */
 .nav-links a:hover{
   background: rgba(46,125,50,0.10);
 }
@@ -120,6 +128,7 @@ p{
 }
 
 /* ================= HERO ================= */
+/* Hero section sa taas */
 .site-header{
   margin-top: 72px;
   min-height: calc(100vh - 72px);
@@ -135,6 +144,7 @@ p{
   padding: 70px var(--gutter);
 }
 
+/* Dark overlay sa hero para readable ang text */
 .site-header::before{
   content:"";
   position:absolute;
@@ -142,6 +152,7 @@ p{
   background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.45));
 }
 
+/* Hero text positioning */
 .site-header h1,
 .site-header p{
   position:relative;
@@ -149,6 +160,7 @@ p{
   max-width: 1000px;
 }
 
+/* Main hero title */
 .site-header h1{
   color: #38ff6a;
   font-size: clamp(34px, 5vw, 64px);
@@ -157,6 +169,7 @@ p{
   text-shadow: 0 10px 30px rgba(0,0,0,0.55);
 }
 
+/* Hero description text */
 .site-header p{
   margin-top: 12px;
   color: rgba(255,255,255,0.90);
@@ -165,7 +178,8 @@ p{
   text-shadow: 0 6px 16px rgba(0,0,0,0.45);
 }
 
-/* ================= CONSISTENT CARD STYLE ================= */
+/* ================= PARE-PAREHONG CARD STYLE ================= */
+/* Base style ng mga cards */
 .card-surface{
   background: #ffffff;
   border: 1px solid rgba(17,24,39,0.10);
@@ -174,10 +188,12 @@ p{
 }
 
 /* ================= ABOUT ================= */
+/* About section background */
 .about{
   background: var(--surface);
 }
 
+/* Card layout sa about section */
 .about-card{
   background: #f0f2f6;
   border: 1px solid rgba(17,24,39,0.08);
@@ -191,6 +207,7 @@ p{
   align-items: center;
 }
 
+/* Container ng image sa about */
 .about-img{
   border-radius: 12px;
   overflow: hidden;
@@ -198,6 +215,7 @@ p{
   border: 1px solid rgba(17,24,39,0.08);
 }
 
+/* Image styling */
 .about-img img{
   width: 100%;
   height: 220px;
@@ -205,6 +223,7 @@ p{
   display:block;
 }
 
+/* Details box sa about */
 .about-details{
   background: #ffffff;
   border-radius: 12px;
@@ -212,6 +231,7 @@ p{
   padding: var(--card-pad);
 }
 
+/* About title */
 .about-details h3{
   font-family: Georgia, "Times New Roman", serif;
   color: var(--brand-2);
@@ -220,17 +240,18 @@ p{
 }
 
 /* ================= ATTRACTIONS (CAROUSEL) ================= */
+/* Background ng attractions section */
 .attractions{
   background: #eef2f7;
 }
 
-/* Align carousel like the rest of the container */
+/* Pantay ang align ng carousel sa container */
 .carousel{
   width: 100%;
   overflow: hidden;
 }
 
-/* Add equal “container” padding inside the scroll area */
+/* Equal padding sa loob ng scroll area */
 .carousel-track{
   display: flex;
   gap: 16px;
@@ -244,6 +265,7 @@ p{
 }
 .carousel-track::-webkit-scrollbar{ display:none; }
 
+/* Style ng bawat slide */
 .slide{
   flex: 0 0 320px;
   height: 240px;
@@ -257,6 +279,7 @@ p{
   border: 1px solid rgba(17,24,39,0.08);
 }
 
+/* Slide image */
 .slide img{
   width: 100%;
   height: 100%;
@@ -266,10 +289,12 @@ p{
   transition: transform 0.25s ease;
 }
 
+/* Zoom effect kapag hover */
 .slide:hover img{
   transform: scale(1.06);
 }
 
+/* Caption sa ilalim ng slide */
 .slide-cap{
   position:absolute;
   left:0; right:0; bottom:0;
@@ -278,18 +303,21 @@ p{
   background: linear-gradient(to top, rgba(0,0,0,0.78), rgba(0,0,0,0));
 }
 
+/* Slide title */
 .slide-cap h3{
   font-family: Georgia, "Times New Roman", serif;
   font-size: 16px;
   margin-bottom: 4px;
 }
 
+/* Slide description */
 .slide-cap p{
   font-size: 13px;
   opacity: 0.92;
   color: rgba(255,255,255,0.92);
 }
 
+/* Small hint text sa ilalim ng carousel */
 .carousel-hint{
   text-align:center;
   margin-top: 10px;
@@ -298,10 +326,12 @@ p{
 }
 
 /* ================= CONTACT ================= */
+/* Contact section background */
 .contact{
   background: var(--surface);
 }
 
+/* Grid layout ng contact */
 .contact-grid{
   display: grid;
   grid-template-columns: 1fr 360px;
@@ -309,6 +339,7 @@ p{
   align-items: start;
 }
 
+/* Info box */
 .info-box{
   background: #f0f2f6;
   border: 1px solid rgba(17,24,39,0.08);
@@ -317,12 +348,13 @@ p{
   padding: var(--card-pad);
 }
 
-/* Let your long <p> text wrap nicely */
+/* Para maayos ang wrap ng mahabang text */
 .info-box p{
   white-space: pre-line;
   line-height: 1.7;
 }
 
+/* Form container */
 .form-box{
   background: #ffffff;
   border: 1px solid rgba(17,24,39,0.10);
@@ -331,6 +363,7 @@ p{
   padding: var(--card-pad);
 }
 
+/* Form title */
 .form-box h3{
   text-align:center;
   margin-bottom: 14px;
@@ -339,17 +372,20 @@ p{
   letter-spacing: 0.5px;
 }
 
+/* Form layout */
 form{
   display:flex;
   flex-direction:column;
   gap: 10px;
 }
 
+/* Label style */
 label{
   font-size: 12px;
   color: var(--muted);
 }
 
+/* Input at textarea style */
 input, textarea{
   width: 100%;
   padding: 11px 12px;
@@ -360,11 +396,13 @@ input, textarea{
   transition: 0.2s ease;
 }
 
+/* Focus effect */
 input:focus, textarea:focus{
   border-color: rgba(46,125,50,0.65);
   box-shadow: 0 0 0 4px rgba(46,125,50,0.12);
 }
 
+/* Button style */
 button{
   margin-top: 6px;
   padding: 11px 12px;
@@ -377,12 +415,14 @@ button{
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
+/* Hover effect ng button */
 button:hover{
   opacity: 0.95;
   transform: translateY(-1px);
 }
 
 /* ================= FOOTER ================= */
+/* Footer section */
 .footer{
   background: #e8ecf3;
   border-top: 1px solid var(--line);
@@ -394,7 +434,7 @@ button:hover{
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px){
-  /* nav wraps cleanly */
+  /* Maayos na pag-wrap ng nav sa mobile */
   .nav-inner{
     height: auto;
     padding: 12px 14px;
@@ -409,14 +449,14 @@ button:hover{
 
   .nav-spacer{ display:none; }
 
-  /* hero consistent on mobile */
+  /* Consistent hero sa mobile */
   .site-header{
     margin-top: 86px;
     min-height: 70vh;
     padding: 56px 16px;
   }
 
-  /* about becomes 1-column */
+  /* About magiging 1 column */
   .about-card{
     grid-template-columns: 1fr;
   }
@@ -425,12 +465,12 @@ button:hover{
     height: 220px;
   }
 
-  /* contact becomes stacked */
+  /* Contact magiging stacked */
   .contact-grid{
     grid-template-columns: 1fr;
   }
 
-  /* carousel cards scale */
+  /* Carousel cards mas responsive */
   .slide{
     flex-basis: 78vw;
     height: 250px;
