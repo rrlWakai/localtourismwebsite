@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <title>Local Tourism Website</title>
+  <!-- Link ng external CSS file -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ================= NAVIGATION BAR ================= -->
+  <!-- Ito ang navigation section ng website -->
   <nav class="nav">
     <div class="nav-inner">
+      
+      <!-- Logo ng San Pablo City -->
       <img class="nav-logo" src="images/san pablo.png" alt="San Pablo Logo" />
 
+      <!-- Mga navigation links papunta sa iba't ibang section -->
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,25 +24,31 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
+      <!-- Spacer para sa layout alignment -->
       <div class="nav-spacer"></div>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- ================= HERO SECTION ================= -->
+  <!-- Ito ang unang makikita ng user pag open ng website -->
   <header id="home" class="site-header">
     <h1>Welcome to San Pablo City</h1>
     <p>Maligayang Pagdating sa opisyal na website ng San Pablo City, Laguna</p>
   </header>
 
-  <!-- ABOUT (wireframe card) -->
+  <!-- ================= ABOUT SECTION ================= -->
+  <!-- Section na naglalaman ng impormasyon tungkol sa lungsod -->
   <section id="about" class="section about">
     <h2 class="section-title">About</h2>
 
     <div class="about-card">
+
+      <!-- Larawan ng San Pablo -->
       <div class="about-img">
         <img src="images/about.png" alt="San Pablo view" />
       </div>
 
+      <!-- Maikling description tungkol sa lungsod -->
       <div class="about-details">
         <h3>San Pablo City</h3>
         <p>
@@ -47,120 +58,127 @@
     </div>
   </section>
 
- <section id="attractions" class="section attractions">
-  <h2 class="section-title">Attractions (Seven Lakes)</h2>
+  <!-- ================= ATTRACTIONS SECTION ================= -->
+  <!-- Carousel gallery para sa Seven Lakes -->
+  <section id="attractions" class="section attractions">
+    <h2 class="section-title">Attractions (Seven Lakes)</h2>
 
-  <div class="carousel" aria-label="Seven Lakes gallery carousel">
-    <div class="carousel-track">
-      <!-- 1 -->
-      <article class="slide">
-        <img src="images/lake1.png" alt="Sampaloc Lake" />
-        <div class="slide-cap">
-          <h3>Sampaloc Lake</h3>
-          <p>One of the most popular lakes in San Pablo.</p>
-        </div>
-      </article>
+    <div class="carousel" aria-label="Seven Lakes gallery carousel">
+      <div class="carousel-track">
 
-      <!-- 2 -->
-      <article class="slide">
-        <img src="images/lake2.jpg" alt="Bunot Lake" />
-        <div class="slide-cap">
-          <h3>Bunot Lake</h3>
-          <p>Known for its fish pens and peaceful view.</p>
-        </div>
-      </article>
+        <!-- Slide 1 -->
+        <article class="slide">
+          <img src="images/lake1.png" alt="Sampaloc Lake" />
+          <div class="slide-cap">
+            <h3>Sampaloc Lake</h3>
+            <p>Isa sa pinakasikat na lawa sa San Pablo.</p>
+          </div>
+        </article>
 
-      <!-- 3 -->
-      <article class="slide">
-        <img src="images/lake3.jpg" alt="Palakpakin Lake" />
-        <div class="slide-cap">
-          <h3>Palakpakin Lake</h3>
-          <p>A calm lake surrounded by greenery.</p>
-        </div>
-      </article>
+        <!-- Slide 2 -->
+        <article class="slide">
+          <img src="images/lake2.jpg" alt="Bunot Lake" />
+          <div class="slide-cap">
+            <h3>Bunot Lake</h3>
+            <p>Kilala sa mga fish pens at tahimik na tanawin.</p>
+          </div>
+        </article>
 
-      <!-- 4 -->
-      <article class="slide">
-        <img src="images/lake4.png" alt="Pandin Lake" />
-        <div class="slide-cap">
-          <h3>Pandin Lake</h3>
-          <p>Famous for bamboo rafting experiences.</p>
-        </div>
-      </article>
+        <!-- Slide 3 -->
+        <article class="slide">
+          <img src="images/lake3.jpg" alt="Palakpakin Lake" />
+          <div class="slide-cap">
+            <h3>Palakpakin Lake</h3>
+            <p>Isang kalmadong lawa na napapalibutan ng mga puno.</p>
+          </div>
+        </article>
 
-      <!-- 5 -->
-      <article class="slide">
-        <img src="images/lake5.jpg" alt="Yambo Lake" />
-        <div class="slide-cap">
-          <h3>Yambo Lake</h3>
-          <p>Often visited together with Pandin Lake.</p>
-        </div>
-      </article>
+        <!-- Slide 4 -->
+        <article class="slide">
+          <img src="images/lake4.png" alt="Pandin Lake" />
+          <div class="slide-cap">
+            <h3>Pandin Lake</h3>
+            <p>Sikat sa bamboo rafting experience.</p>
+          </div>
+        </article>
 
-      <!-- 6 -->
-      <article class="slide">
-        <img src="images/lake6.jpg" alt="Calibato Lake" />
-        <div class="slide-cap">
-          <h3>Calibato Lake</h3>
-          <p>Less crowded, relaxing nature atmosphere.</p>
-        </div>
-      </article>
+        <!-- Slide 5 -->
+        <article class="slide">
+          <img src="images/lake5.jpg" alt="Yambo Lake" />
+          <div class="slide-cap">
+            <h3>Yambo Lake</h3>
+            <p>Madalas puntahan kasama ng Pandin Lake.</p>
+          </div>
+        </article>
 
-      <!-- 7 -->
-      <article class="slide">
-        <img src="images/lake7.jpg" alt="Mohicap Lake" />
-        <div class="slide-cap">
-          <h3>Mohicap Lake</h3>
-          <p>Quiet spot with a scenic lakeside view.</p>
-        </div>
-      </article>
+        <!-- Slide 6 -->
+        <article class="slide">
+          <img src="images/lake6.jpg" alt="Calibato Lake" />
+          <div class="slide-cap">
+            <h3>Calibato Lake</h3>
+            <p>Hindi masyadong matao at may relaxing na ambiance.</p>
+          </div>
+        </article>
+
+        <!-- Slide 7 -->
+        <article class="slide">
+          <img src="images/lake7.jpg" alt="Mohicap Lake" />
+          <div class="slide-cap">
+            <h3>Mohicap Lake</h3>
+            <p>Tahimik na lugar na may magandang lakeside view.</p>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </div>
+  </section>
 
-  
-</section>
-
-  <!-- CONTACT / INFO + FORM (2 columns) -->
+  <!-- ================= CONTACT SECTION ================= -->
+  <!-- Dalawang column: impormasyon + contact form -->
   <section id="contact" class="section contact">
     <div class="contact-grid">
+
+      <!-- Information box -->
       <div class="info-box">
-        <p>Location: Province of Laguna, CALABARZON Region (Region IV‑A), Philippines
-
-Coordinates: 14°04′N, 121°20′E
-
-Land Area: 197.56 km² (76.28 sq mi)
-
-Elevation: ~118.9 meters above sea level
-
-Population: 285,348 (2020 Census)
-
-Founded: 1586; became a chartered city in 1940
-
-Barangays: 80 administrative divisions</p>
+        <p>
+          Location: Province of Laguna, CALABARZON Region (Region IV-A), Philippines
+          Coordinates: 14°04′N, 121°20′E
+          Land Area: 197.56 km²
+          Elevation: ~118.9 meters above sea level
+          Population: 285,348 (2020 Census)
+          Founded: 1586; became a chartered city in 1940
+          Barangays: 80 administrative divisions
+        </p>
       </div>
 
+      <!-- Contact form -->
       <div class="form-box">
         <h3>Contact</h3>
 
         <form>
+          <!-- Input para sa pangalan -->
           <label>Name</label>
           <input type="text" placeholder="Your name" required />
 
+          <!-- Input para sa email -->
           <label>Email</label>
           <input type="email" placeholder="Your email" required />
 
+          <!-- Textarea para sa mensahe -->
           <label>Message</label>
           <textarea placeholder="Your message" rows="5" required></textarea>
 
+          <!-- Submit button -->
           <button type="submit">Send</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ================= FOOTER ================= -->
+  <!-- Pinaka-ilalim na bahagi ng website -->
   <footer class="footer">
-    <p></p>
+    <p>&copy; 2026 San Pablo City Tourism Website</p>
   </footer>
 
 </body>
